@@ -14,3 +14,24 @@
     "imagemin-pngquant": "^5.0.1"
   }
 }
+
+
+{
+  "builder": {
+    "gc": {
+      "defaultKeepStorage": "20GB",
+      "enabled": true
+    }
+  },
+  "experimental": true,
+  "features": {
+    "buildkit": true
+  },
+  "insecure-registries": [
+    "sftcps-vmint-01:5000"
+  ],
+  "log-opts": {
+    "max-file": "2",
+    "max-size": "10m"
+  }
+}
